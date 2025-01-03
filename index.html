@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delizia Bakes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            flex-direction: column;
+        }
+
+        .headline {
+            font-size: 2rem;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out;
+            margin-bottom: 10px;
+            margin-top: -20px; /* Move the text up */
+        }
+
+        .subheadline {
+            font-size: 1.5rem;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out;
+            margin-top: -10px; /* Move the text closer to the headline */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes moveUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .banner {
+            margin-bottom: 20px;
+            width: 50%; /* Reduces the size of the image */
+            max-width: 400px;
+            animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out; /* Add animation to image */
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            scale: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="banneryam.png" alt="Delizia Bakes">
+    </div>
+    <div class="headline">Opening Soon</div>
+    <div class="subheadline"></div>
+    <script>
+        // Optional: Add more animations or interactivity
+        console.log("Welcome to Delizia Bakes!");
+    </script>
+</body>
+</html>
