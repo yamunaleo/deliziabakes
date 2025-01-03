@@ -1,0 +1,25 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #ffe6f2;
+  color: #4d4d4d;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff99cc;
+  padding: 1rem 2rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #4d4d4d;
+  margin: 0 1rem;
+}
+.navbar a:hover {
+  color: #009966;
+}
+.page {
+  padding: 2rem;
+}
